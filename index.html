@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unsplash Image API </title>
+    <link rel="icon" href="favicon.png" type="image">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="bg-gray-500">
+   <h1 class="text-white text-5xl font-medium text-center p-4">Unsplash Image API with <span class="hl font-bold">JS</span></h1>
+
+   <div class="flex mx-auto w-2/3 px-8">
     
+    <div class="px-4">
+      <label for="spacing" class="text-4xl text-white font-normal capitalize">spacing:</label>
+      <input type="range" name="spacing" min="10" max="80" value="10" data-sizing="px">
+    </div>    
+
+    <div class="px-4">
+      <label for="blur" class="text-4xl text-white font-normal capitalize">blur:</label>
+      <input type="range" name="blur" min="0" max="25" value="0.5" data-sizing="px">
+    </div>
+
+    <div class="px-4">
+      <label for="base" class="text-4xl text-white font-normal capitalize">base color:</label>
+      <input type="color" name="base" class="outline-none bg-transparent cursor-pointer border-none" value="#fc8181">
+    </div>
+    
+  </div>
+
+   <div class="w-2/4 mx-auto my-8 px-4">
+     <img src="https://source.unsplash.com/800x500/?mountain,outdoor,landscape,wallpaper" alt="Unsplash API Image">
+   </div>
+   
+   <div class="flex mx-auto mb-8">
+      <button class="mx-auto text-white font-bold py-2 px-4 capitalize rounded outline-none" aria-label=" generate new image" onclick="window.location.reload();">Generate New Image</button>
+   </div>
+  <script src="main.js"></script>
 </body>
 </html>
