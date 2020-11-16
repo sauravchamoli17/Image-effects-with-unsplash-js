@@ -1,6 +1,6 @@
 # Image-effects-with-unsplash-js
 
-![Preview](preview.png)
+[![Preview](preview.png)](https://sauravchamoli17.github.io/Image-effects-with-unsplash-js/)
 
 ## Live Version : [See here](https://sauravchamoli17.github.io/Image-effects-with-unsplash-js/)
 
